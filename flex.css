@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  /*使得图片最大宽度不超过这一行*/
+}
+.header {
+  display: flex;
+  background: grey;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo > img {
+  height: 26px;
+  vertical-align: middle;
+  /*如果图片超出border，用此方法去除多余的超出图片，vat+tab*/
+}
+ul {
+  display: flex;
+}
+ul > li {
+  padding: 4px;
+}
+.content {
+  display: flex;
+  min-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content > aside {
+  background: black;
+  width: 200px;
+}
+.content > main {
+  background: #666;
+  height: 400px;
+  flex-grow: 1;
+}
+.content > .ad {
+  background: #999;
+  width: 100px;
+}
+.imagelist {
+  min-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.imagelist > .x {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+}
+.image {
+  width: 191px;
+  height: 191px;
+  background: grey;
+  border: 1px solid green;
+  margin-right: 12px;
+  margin-bottom: 10px;
+}
